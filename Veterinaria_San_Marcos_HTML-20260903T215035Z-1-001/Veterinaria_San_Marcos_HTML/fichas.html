@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Clínico - Veterinaria San Marcos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>🐾 Veterinaria San Marcos</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="citas.html">Solicitar Cita</a></li>
+                <li><a href="fichas.html" class="active">Fichas Clínicas</a></li>
+                <li><a href="admin.html">Panel Admin</a></li>
+                <li><a href="login.html" class="btn-login">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-main">
+        <section class="content-box">
+            <h2>Consulta de Fichas e Historial Clínico</h2>
+            <p>Ingresa el RUT del dueño o el nombre de la mascota para buscar su expediente médico digital.</p>
+            
+            <div class="search-bar">
+                <input type="text" id="busquedaMascota" placeholder="Buscar por nombre de mascota...">
+                <button type="button" class="btn-primary" onclick="alert('Búsqueda simulada conectada al microservicio de pacientes.')">Buscar</button>
+            </div>
+
+            <div class="table-container" style="margin-top: 2rem;">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Mascota</th>
+                            <th>Especie</th>
+                            <th>Dueño</th>
+                            <th>Último Diagnóstico</th>
+                            <th>Próxima Vacuna / Control</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Firulais</td>
+                            <td>Perro</td>
+                            <td>Juan Pérez</td>
+                            <td>Otitis leve tratada con gotas óticas.</td>
+                            <td>15/10/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Luna</td>
+                            <td>Gato</td>
+                            <td>Camila Soto</td>
+                            <td>Control sano y aplicación de vacuna triple felina.</td>
+                            <td>20/11/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Copito</td>
+                            <td>Conejo</td>
+                            <td>Esteban Rivas</td>
+                            <td>Corte de dientes incisivos y revisión general.</td>
+                            <td>05/12/2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>📍 Rancagua | 📞 +56 72 2234567</p>
+        <p>&copy; 2026 Clínica Veterinaria San Marcos.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

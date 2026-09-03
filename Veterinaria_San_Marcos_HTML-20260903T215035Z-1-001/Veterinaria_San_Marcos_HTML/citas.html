@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Citas - Veterinaria San Marcos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>🐾 Veterinaria San Marcos</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="citas.html" class="active">Solicitar Cita</a></li>
+                <li><a href="fichas.html">Fichas Clínicas</a></li>
+                <li><a href="admin.html">Panel Admin</a></li>
+                <li><a href="login.html" class="btn-login">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-form">
+        <section class="form-section">
+            <h2>Solicitud de Cita Médica (Dueño de Mascota)</h2>
+            <p>Completa el formulario para agendar una atención para tu mascota sin necesidad de llamar por teléfono.</p>
+            
+            <div id="mensaje-feedback" class="feedback-box"></div>
+
+            <form id="formCita">
+                <div class="campo">
+                    <label for="nombreDueno">Nombre del Dueño:</label>
+                    <input type="text" id="nombreDueno" placeholder="Ej: Marcela Gómez" autocomplete="name" required>
+                </div>
+                <div class="campo">
+                    <label for="emailDueno">Correo Electrónico:</label>
+                    <input type="email" id="emailDueno" placeholder="correo@ejemplo.com" autocomplete="email" required>
+                </div>
+                <div class="campo">
+                    <label for="nombreMascota">Nombre de la Mascota:</label>
+                    <input type="text" id="nombreMascota" placeholder="Ej: Toby" required>
+                </div>
+                <div class="campo">
+                    <label for="especie">Especie:</label>
+                    <select id="especie" required>
+                        <option value="">Seleccione especie...</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="conejo">Conejo</option>
+                        <option value="ave">Ave</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="fechaCita">Fecha y Hora Preferida:</label>
+                    <input type="datetime-local" id="fechaCita" required>
+                </div>
+                <div class="campo">
+                    <label for="motivo">Motivo de la Consulta:</label>
+                    <textarea id="motivo" rows="3" placeholder="Describa brevemente los síntomas o motivo..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Solicitud de Cita</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>📍 Rancagua | 📞 +56 72 2234567</p>
+        <p>&copy; 2026 Clínica Veterinaria San Marcos.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
