@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Clínico - Veterinaria San Marcos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>🐾 Veterinaria San Marcos</h1>
+        </div>
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="guest-only"><a href="citas.html">Solicitar cita</a></li>  
+                <li class="admin-only"><a href="fichas.html" class="active">Fichas Clínicas</a></li>
+                <li class="admin-only"><a href="admin.html">Panel Admin</a></li>
+                <li class="guest-only"><a href="login.html" class="btn-login">Iniciar Sesión</a></li>
+                <li class="auth-only"><a href="#" id="btnLogout" class="btn-login">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-main">
+        <section class="content-box">
+            <h2>Consulta de Fichas e Historial Clínico</h2>
+            <p>Expedientes médicos registrados y citas solicitadas en el sistema.</p>
+            
+            <div class="search-bar">
+                <input type="text" id="busquedaMascota" placeholder="Buscar por nombre de mascota...">
+                <button type="button" class="btn-primary" onclick="alert('Búsqueda simulada.')">Buscar</button>
+            </div>
+
+            <div class="table-container" style="margin-top: 2rem;">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Mascota</th>
+                            <th>Especie</th>
+                            <th>Dueño</th>
+                            <th>Servicio Solicitado / Diagnóstico</th>
+                            <th>Fecha Cita / Control</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaFichasBody">
+                        <!-- Citas estáticas de muestra -->
+                        <tr>
+                            <td>Firulais</td>
+                            <td>Perro</td>
+                            <td>Juan Pérez</td>
+                            <td>Consulta general - Otitis leve tratada</td>
+                            <td>15/10/2026</td>
+                        </tr>
+                        <tr>
+                            <td>Luna</td>
+                            <td>Gato</td>
+                            <td>Camila Soto</td>
+                            <td>Vacuna triple felina - Control sano</td>
+                            <td>20/11/2026</td>
+                        </tr>
+                        <!-- Las nuevas citas solicitadas se agregarán dinámicamente aquí -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>📍 Rancagua | 📞 +56 72 2234567</p>
+        <p>&copy; 2026 Clínica Veterinaria San Marcos.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
